@@ -30,6 +30,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## SSR mode
 
-npm run dev:ssr
+### Full SSR
 
-Calling http://localhost:4201/ with Postman will show you the data retrieved (contrary to http://localhost:4200/ which is the Angular csr)
+npm run dev:ssr
+npm run serve:ssr
+
+Calling http://localhost:4000/ with Postman will show you the data retrieved (contrary to http://localhost:4200/ which is the Angular csr)
+
+### SSG - prerender then serve static files
+
+https://angular.io/guide/prerendering
+https://writtenforcoders.com/blog/angular-ssg-full-guide -> npx serve ./dist/angular-ssr/browser

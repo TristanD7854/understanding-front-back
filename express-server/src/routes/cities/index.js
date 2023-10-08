@@ -12,7 +12,7 @@ function sleep(ms) {
 const cities = [
     {
         id: 0,
-        name: "New York",
+        name: "Toulouse",
     },
     {
         id: 1,
