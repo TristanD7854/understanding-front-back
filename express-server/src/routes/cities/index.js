@@ -1,6 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
+function sleep(ms) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, ms);
+    });
+}
+
 const cities = [
     {
         id: 0,
@@ -8,21 +14,25 @@ const cities = [
     },
     {
         id: 1,
-        name: "Berlin",
+        name: "Londres",
     },
     {
         id: 2,
-        name: "London",
+        name: "Paris",
     },
 ];
 
-router.get("/", (req, res) => {
+router.get("/", async (req, res) => {
+    await sleep(3000);
+
     res.json(cities);
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
     const id = req.params.id;
     const city = cities[id];
+
+    await sleep(3000);
 
     if (city != undefined) {
         res.status(200).json(city);
