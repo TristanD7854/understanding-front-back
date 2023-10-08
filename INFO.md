@@ -3,12 +3,15 @@
 
 --------------------------**test csr vs ssr speed and visual effect**
 
+
+## HMR -> doc projet vite dessus, tester avec angular/next la diff
+
 Créer un monorepo avec full projets React/Angular :
 ok    -projet avec l’ancien mode (pas de server components) -> créer 4 tsx files avec reame pour SSR, ISR, CSR, SSG
-    -projet react basique front, appelant express, SSR vs CSR
+current    -projet react basique front, appelant express, SSR vs CSR
 ok    -projet expres basique, répondant au front
 ok    -projet next avec front/back en même temps
-    -projet express avec front/back en même temps
+ok    -projet express avec front/back en même temps
 ok    -projet angular SSR (Universal)                                       **TODO : add SSG**
 ok    -projet angular CSR
     -projet avec le nouveau -> créer server components, tester avec slow network (3g in inspector), avec loading screen     **todo : add app->feed->post + ad-feed svg**
@@ -27,7 +30,7 @@ You can simulate a slower network to see the transition more clearly as follows:
 
 ## CSR / SSR / SSG / ISR
 
-See next-server-with-pages-router app for the comparison.
+See next-with-pages-router app for the comparison.
 
 ## SPA vs MPA | CSR / SSR / SSG / ISR
 

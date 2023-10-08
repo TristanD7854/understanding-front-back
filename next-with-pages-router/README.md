@@ -10,9 +10,9 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 
-## Nest = Front + Back together
+## Next = Front + Back together
 
-Nest is front (with /pages) + back (with /api) on the go ...
+Next is front (with /pages) + back (with /api) on the go ...
 
 
 ## CSR / SSR / SSG / ISR
