@@ -7,7 +7,7 @@ const app = express();
 
 
 // Enable cors for front
-app.use(cors({origin: 'http://localhost:3000'}));
+app.use(cors({origin: '*'}));
 
 
 app.use('/cities', require('./src/routes/cities'));

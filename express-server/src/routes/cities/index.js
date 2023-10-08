@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+const sleepAmount = 2500;
+
 function sleep(ms) {
     return new Promise((resolve) => {
       setTimeout(resolve, ms);
@@ -23,7 +25,7 @@ const cities = [
 ];
 
 router.get("/", async (req, res) => {
-    await sleep(3000);
+    await sleep(sleepAmount);
 
     res.json(cities);
 });
@@ -32,7 +34,7 @@ router.get("/:id", async (req, res) => {
     const id = req.params.id;
     const city = cities[id];
 
-    await sleep(3000);
+    await sleep(sleepAmount);
 
     if (city != undefined) {
         res.status(200).json(city);
