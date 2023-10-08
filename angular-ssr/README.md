@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+
+## SSR mode
+
+npm run dev:ssr
+
+Calling http://localhost:4201/ with Postman will show you the data retrieved (contrary to http://localhost:4200/ which is the Angular csr)
