@@ -36,6 +36,7 @@ We get in Postman the same file than here : ![SSR Sources](documentation-images/
 but without the left display (Postman can't do that).
 
 Advantage : fastest response than CSR for initial load page apparently
+Good for large ecom wesbite, like amazon.
 
 ### SSG - static site generation
 
