@@ -4,8 +4,7 @@
 --------------------------**test csr vs ssr speed and visual effect**
 
 go faire :
-    -next app-router (newer than pages router)
-    -server components - next
+    -next app-router (newer than pages router) (server components)
 
 ## HMR -> doc projet vite dessus, tester avec angular/next la diff
 
